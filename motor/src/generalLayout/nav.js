@@ -1,6 +1,8 @@
 import React from "react";
 import TypeMotor from "./typeMotor";
-function handleClick() {
+import NavMobileLayout from './navMobile/navMobileLayout'
+
+function handleClickModels() {
   for (
     var i = 0;
     i < document.getElementsByClassName("motorType").length;
@@ -13,8 +15,32 @@ function handleClick() {
   // document.getElementsByClassName('motorType')[chosen].classList.add('type-chosen');
   this.classList.add("type-chosen");
 }
+
+function handleClickMenu(index) {
+  console.log(index)
+  for (
+    var i = 0;
+    i < document.getElementsByClassName("menu-list-item").length;
+    i++
+  ) {
+    document
+      .getElementsByClassName("menu-list-item")
+      [i].classList.remove("type-chosen");
+    document
+      .getElementsByClassName("menu-list-item")
+      [i].style.display="none";
+  }
+  // document.getElementsByClassName('menu-list-item')[chosen].classList.add('type-chosen');
+  console.log(document.getElementsByClassName('menu-list-item')[index].classList.add("type-chosen"))
+  document.getElementsByClassName('menu-list-item')[index].classList.add("type-chosen");
+  document.getElementsByClassName('menu-list-item')[index].style.display="block";
+  document.getElementById("menu-list-top").classList.add("closeBtChange");
+  document.getElementsByClassName("fa-arrow-left")[index].style.display="inline-block";
+
+}
+
 function openMotorList() {
-  document.getElementById("motor-list").style.width = "100vw";
+  document.getElementById("motor-list").style.width = "100v w";
   document.getElementById("motor-list").style.width = "100vw";
   document.getElementById("motor-list").style.opacity = "1";
   document.getElementsByClassName("motorList-container-left")[0].style.width =
@@ -32,11 +58,28 @@ function openMotorList() {
       [i].classList.remove("type-chosen");
     document
       .getElementsByClassName("motorType")
-      [i].addEventListener("click", handleClick, true);
+      [i].addEventListener("click", handleClickModels, true);
   }
   document.getElementsByClassName("motorType")[0].classList.add("type-chosen");
   document.getElementById("body").style.overflow = "hidden";
 }
+
+function openMenuList(){
+  document.getElementById("menu-list").style.width = "100vw";
+  document.getElementById("menu-list").style.opacity = "1";
+  document.getElementById("menu-list-bottom").style.display = "flex";
+  for (
+    var i = 0;
+    i < document.getElementsByClassName("menu-list-item").length;
+    i++
+  ) {
+    let index= i;
+    document.getElementsByClassName("menu-list-item")[i].classList.remove("type-chosen");
+    document.getElementsByClassName("menu-list-item")[i].addEventListener("click", () => {handleClickMenu(index)}, true);
+  }
+  document.getElementById("body").style.overflow = "hidden";
+}
+
 export default function Nav({color}) {
   return (
     <>
@@ -62,6 +105,7 @@ export default function Nav({color}) {
           <div className="motorItems-center" id="motorItems"></div>
           <div className="motorItems-bottom"></div>
         </div>
+        <NavMobileLayout/>
       </div>
       <div className="mv-nav" id="mv-nav">
         <div className="mv-nav-container">
@@ -75,7 +119,7 @@ export default function Nav({color}) {
           </a>
         </div> */}
         <div className="mv-nav-container">
-          <div className="mv-container-div">
+          <div className="mv-container-div" onClick={openMenuList}>
             <p className="nav-name" style={{color: color}}>Menu</p>
           </div>
         </div>
