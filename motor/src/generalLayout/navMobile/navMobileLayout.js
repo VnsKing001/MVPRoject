@@ -101,6 +101,7 @@ function closeMenuList(){
       document.getElementsByClassName("fa-arrow-left")[i].style.display="none";
     }
     document.getElementById("menu-list-bottom").style.display = "none";
+    document.getElementById("body").style.overflowY = "auto";
 }
 
 

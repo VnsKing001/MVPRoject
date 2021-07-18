@@ -40,7 +40,6 @@ function handleClickMenu(index) {
 }
 
 function openMotorList() {
-  document.getElementById("motor-list").style.width = "100v w";
   document.getElementById("motor-list").style.width = "100vw";
   document.getElementById("motor-list").style.opacity = "1";
   document.getElementsByClassName("motorList-container-left")[0].style.width =
@@ -105,8 +104,8 @@ export default function Nav({color}) {
           <div className="motorItems-center" id="motorItems"></div>
           <div className="motorItems-bottom"></div>
         </div>
-        <NavMobileLayout/>
       </div>
+      <NavMobileLayout/>
       <div className="mv-nav" id="mv-nav">
         <div className="mv-nav-container">
           <div className="mv-container-div" onClick={openMotorList}>
