@@ -1,0 +1,121 @@
+.menu-list {
+    position: fixed;
+    z-index: 1000;
+    width: 0;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background-color: white;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .menu-list-top{
+    text-align: right;
+    margin: 20px;
+  }
+  
+  .menu-list-bottom{
+    display: none;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .menu-list-item{
+    padding: 5px 10px;
+    margin: 10px auto;
+  }
+  
+  .menu-list-item-drop{
+    display: none;
+    color:#8d8d8d;
+    margin: 20px;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    transition: color 0.2s 0.1s;
+  }
+
+  .menu-list-item-drop:hover{
+    color: black;
+  }
+
+  #closeMenubutton{
+    font-size: 16px;
+    font-family: "Anton", sans-serif;
+  }
+
+  .area-list-drop{
+    overflow-y: hidden;
+    height: 0px;
+    max-width: 430px ;
+    transition: height 0.6s ease ;
+  }
+
+  .type-chosen>.area-list-drop{
+    height: 430px;
+  }
+
+  .menu-list-item.type-chosen>.area-list-drop>.menu-list-item-drop{
+    display: block;
+  }
+
+  .fa-arrow-left{
+    color: black;
+    font-size: 20px;
+  }
+
+  .menu-list-item.type-chosen{
+    top: 5px;
+  }
+  
+  .menu-list-item.type-chosen{
+    border: none;
+  }
+  
+  .fa-arrow-left{
+    display: none;
+  }
+
+  .area-button-back{
+    position: absolute;
+    display: inline-block;
+    left: 3%;
+    top: 50px;
+  }
+  
+  .title-menu{
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #000;
+    font-family: "Anton", sans-serif;
+    transition: color 0.2s ;
+    top: 30px;
+  }
+
+  .menu-list-item:not(.type-chosen) > .title-menu:hover{
+    color: #8d8d8d;
+  }
+  
+  .type-chosen>.title-menu{
+    position: relative;
+    top: 0px;
+    font-size: 50px;
+    font-weight: 400;
+    font-family: "Anton", sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding:  10px ;
+    transition: top 0.3s ;
+}
+
+.closeBtChange{
+  position: absolute;
+  right: 20px;
+  top: 50px;
+  margin: 0px;
+}
