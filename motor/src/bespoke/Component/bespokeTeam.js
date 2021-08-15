@@ -27,7 +27,7 @@ export default class TheTeam extends Component{
                     Every biker has the desire to customise their motorcycle to bring it as close as possible to their ultimate bike. The proof of this is the more than one hundred unique pieces made, under the guidance of our designer Alexandre Dauly, for customers of all types.
                 </p>
                 <footer class="blockQuote_footer">
-                    <cite class="blockQuote_caption">- Virginio Ferrari, founder and owner of Monaco Design Studio
+                    <cite class="blockQuote_caption">- Virginio Ferrari, founder and owner of Monaco Design Studio -
                 </cite>
                 </footer>
             </blockquote>

@@ -422,6 +422,12 @@ const NavDealer = () => {
             Sign In
             <div>CONNECT TO US WITH YOUR PERSONAL ACCOUNT</div>
           </a>
+          <a href="certificate">
+            Certificate
+            <div>
+              OUR CERTIFICATION WILL HELP CUSTOMERS ALWAYS GET THE BEST EXPERIENCE
+            </div>
+          </a>
         </div>
       </div>
     </>
@@ -466,7 +472,7 @@ const NavOwnership = () => {
               AND HOW TO EXTEND IT
             </div>
           </a>
-            {/* <a href="road-assistance">
+          {/* <a href="road-assistance">
               Road Assistance
               <div>
                 MV AGUSTA STANDS BY YOUR SIDE 24/7 FOR CAREFREE RIDING WHEREVER
@@ -506,7 +512,6 @@ const NavCompany = () => {
       <div className="mv-pr-layout nav-company">
         <div className="company-container">
           <h3>OUT BRAND</h3>
-          <a href="certificate">Certificate</a>
           <a href="about-us">About Us</a>
           <a href="history">History</a>
           <a href="research-center">Research Center</a>
@@ -515,6 +520,7 @@ const NavCompany = () => {
         <div className="company-container">
           <h3>MV WORLD</h3>
           <a href="monaco-design-studio">Monaco Design Studio</a>
+          <a href="custom-design">Custom Design</a>
           <a href="reveal-events">Reveal Events</a>
           <a href="news">News</a>
         </div>

@@ -115,7 +115,7 @@
   display: inline;
   font-size: 34px;
   line-height: 1;
-  letter-spacing: 0px;
+  letter-spacing: 0.5px;
   font-family: "Anton", sans-serif;
 }
 .news-title-content-small .news-text {

@@ -6,7 +6,28 @@ import TheTeam from "./Component/bespokeTeam";
 import MotorItem from "../generalLayout/motorPage/motorItems/motorItems";
 import Feedback from "./Component/bespokeFeedback";
 import GalleryStep from "./Component/bespokeGalleryStep";
-import "./bespoke.css";
+import BespokeHeader from "./Component/bespokeHeader";
+
+const headerData = {
+  width: "100vw",
+  background: "linear-gradient( 90deg ,#4DA5B8 0%,#51A2CF 100%)",
+  img: {
+    large: "./img/bespoke/banner-xl.png",
+    medium: "./img/bespoke/banner-m.png",
+    small: "",
+  },
+  titles: ["MONACO", "DESIGN", "STUDIO"],
+  content:
+    "Monaco Design Studio is an official department of MV Agusta specialising in the creation of unique models to meet a passionate clientele's demand for the most exclusive, luxury customisation.",
+};
+
+const listImg = [
+  "./img/bespoke/slide1.jpg",
+  "./img/bespoke/slide2.jpg",
+  "./img/bespoke/slide3.jpg",
+  "./img/bespoke/slide4.jpg",
+  "./img/bespoke/slide5.jpg",
+];
 
 const advantages = [
   {
@@ -47,39 +68,39 @@ const advantages = [
   },
 ];
 
-export default function BespokeLayout() {
+const galleries = [
+  {
+    title: "STARTING YOUR PROJECT",
+    para1: "THE BEGINNING",
+    para2:
+      "The process begins with customers contacting their local dealer and discovering everything about this new, high-end service from the factory.They can also contact the Monaco Design Studio directly.",
+    image: "./img/bespoke/start.png",
+  },
+  {
+    title: "DEFINITION AND DISCUSSION",
+    para1: "DEFINING DESIRES",
+    para2:
+      "When contact is made to start a project, MDS and the client discuss possible options. Several renderings of the project are then established. When the project is defined between MDS and the customer, the project is subject to the last validations at the factory with the internal Design department, the CRC and the approval department.",
+    image: "./img/bespoke/definition.png",
+  },
+  {
+    title: "BUILDING YOUR BIKE",
+    para1: "BUILDING YOUR BIKE",
+    para2:
+      "The concrete development of the project can thus begin. Depending on the details of a project and the MV Agusta models used, the construction time of the motorcycle can vary between 3 and 6 months. Once completed, the motorcycle is tested for final approval, establishment of the 'one off 1/1' certificate of authenticity and prepared for dispatch to its final destination.",
+    image: "./img/bespoke/construction.png",
+  },
+];
+
+
+export default function BespokeLayout(props) {
   return (
     <>
-      <div
-        className="bespoke-bg"
-        style={{
-          width: "100vw",
-          background: "linear-gradient( 90deg ,#4DA5B8 0%,#51A2CF 100%)",
-        }}
-      >
-        <picture>
-          <source
-            media="(max-width: 991px)"
-            srcset="./img/bespoke/banner-m.png"
-          ></source>
-          <img
-            className="img-banner-bespoke"
-            src="./img/bespoke/banner-xl.png"
-            alt=""
-          ></img>
-        </picture>
-        <div className="title-header-bs">
-            <h1>
-              <strong>MONACO</strong>
-              <strong>DESIGN</strong>
-              <strong>STUDIO</strong>
-            </h1>
-          </div>
-      </div>
+      <BespokeHeader headerData={headerData} />
       <NavDesktop />
       <Nav color="white" />
-      <SlideImage />
-      <GalleryStep />
+      <SlideImage listImg={listImg} />
+      <GalleryStep galleries={galleries}/>
       <MotorItem advantages={advantages} />
       <TheTeam />
       <Feedback />

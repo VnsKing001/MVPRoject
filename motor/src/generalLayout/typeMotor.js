@@ -165,7 +165,7 @@ export default function TypeMotor() {
     if (types != null) {
       get(`/motor?type=${types[0]}`).then((response) => {
         setMotors((prev) => ({
-          // ...prev,
+          //...prev,
           [selectedType]: response.data,
         }));
       });
