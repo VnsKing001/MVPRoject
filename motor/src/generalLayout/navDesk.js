@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React, { useEffect } from "react";
 const navMotorsData = [
   {
@@ -320,20 +321,24 @@ export default function NavDesktop({ colorBlack }) {
         );
     }
     for (
-      var i = 0;
-      i < document.getElementsByClassName("motor-name-pc").length;
-      i++
+      var key = 0;
+      key < document.getElementsByClassName("motor-name-pc").length;
+      key++
     ) {
       document
         .getElementsByClassName("motor-name-pc")
-        [i].addEventListener(
+        [key].addEventListener(
           "mouseover",
-          refuseItem_Active.bind(Event, i),
+          refuseItem_Active.bind(Event, key),
           true
         );
       document
         .getElementsByClassName("motor-name-pc")
-        [i].addEventListener("mouseout", addItem_Active.bind(Event, i), true);
+        [key].addEventListener(
+          "mouseout",
+          addItem_Active.bind(Event, key),
+          true
+        );
     }
   });
   const colorNavTag = colorBlack ? "" : "colorReverse";

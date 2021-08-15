@@ -538,9 +538,9 @@ label > a:active {
     margin-bottom: 50px;
   }
 
-  .galleryStep-name {
-    /* display: none; */
-  }
+  /* .galleryStep-name {
+    display: none;
+  } */
 
   .active_name {
     display: block;

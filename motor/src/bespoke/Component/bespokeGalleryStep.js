@@ -1,3 +1,4 @@
+/* eslint-disable eqeqeq */
 import classNames from "classnames";
 import React, { Component } from "react";
 

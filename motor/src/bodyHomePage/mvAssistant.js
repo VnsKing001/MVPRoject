@@ -5,7 +5,7 @@ export const MvAssistant = () => {
         <div className="assistant-form">
           <div className="assistant-container">
             <div className="assist-logo">
-                <img src="./img/mv-agusta-logo.png" width="190px"></img>
+                <img src="./img/mv-agusta-logo.png" width="190px" alt=""></img>
             </div>
             <div className="assist-header">
               <p>ALWAYS</p>
@@ -14,7 +14,7 @@ export const MvAssistant = () => {
               <p>THAN EVER</p>
             </div>
             <div className="assist-bt-lt">
-              <a href="assistant" className="assist-bt">
+              <a href="custom-design" className="assist-bt">
                 LEARN MORE
               </a>
             </div>

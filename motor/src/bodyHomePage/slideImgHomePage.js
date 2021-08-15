@@ -152,7 +152,10 @@ export default function SlideImgHomepage() {
                             id={"bt-tt-" + index}
                             className="bt-tt-sl"
                           >
-                            <a style={{ color: bgSlide.color }} href={bgSlide.link}>
+                            <a
+                              style={{ color: bgSlide.color }}
+                              href={bgSlide.link}
+                            >
                               LEARN MORE
                             </a>
                           </button>
@@ -183,7 +186,7 @@ export default function SlideImgHomepage() {
                         type="image/png"
                       ></source>
                       <img
-                        alt="resized image"
+                        alt="resized"
                         src={"./img/homepage/large/" + bgSlide.imgSrc.large}
                       />
                     </picture>
