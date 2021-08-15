@@ -477,13 +477,10 @@ const NavOwnership = () => {
               AND HOW TO EXTEND IT
             </div>
           </a>
-          {/* <a href="road-assistance">
-              Road Assistance
-              <div>
-                MV AGUSTA STANDS BY YOUR SIDE 24/7 FOR CAREFREE RIDING WHEREVER
-                YOU ARE
-              </div>
-            </a> */}
+          <a href="image-lib">
+            My Image
+            <div>EXPLORE OUR MV AGUSTA WALLPAPER'S WORLD LIBRARY</div>
+          </a>
         </div>
       </div>
     </>
@@ -542,6 +539,12 @@ const NavCompany = () => {
             target="_blank"
           >
             Youtube
+          </a>
+          <a
+            href="my-team-projects"
+            target="_blank"
+          >
+            My team Project
           </a>
         </div>
       </div>
