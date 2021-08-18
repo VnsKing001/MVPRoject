@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*background-header*/
+.background-header{
+    width: 100%;
+    height: 600px;
+    background-image: url("../img/imageLibLayout/MV-Agusta-logo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(80%);
+    animation: backgroundAppear;
+    animation-duration: 2s;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.header-intro{
+    padding-top: 280px;
+    position: relative;
+    height: 100%;
+}
+.header-intro h1,
+.header-intro h2 {
+    color: black;
+    font-size: 70px;
+    font-family: 'Anton';
+    letter-spacing: 4px;
+}
+.header-intro h1{
+    animation: textAppear-left;
+    animation-duration: 2s;
+    animation-fill-mode: backwards;
+    animation-delay: 2s;
+}
+.header-intro h2{
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+    animation-name: textAppear-right;
+    animation-duration: 2s;
+    animation-fill-mode: backwards;
+    animation-delay: 4s;
+}
+@keyframes backgroundAppear{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes textAppear-left{
+    from{
+        opacity: 0;
+        margin-left: 100px;
+    }
+    to{
+        opacity: 1;
+        margin-left: 0;
+    }
+}
+@keyframes textAppear-right{
+    from{
+        opacity: 0;
+        margin-right: 100px;
+    }
+    to{
+        opacity: 1;
+        margin-right: 0;
+    }
+}
+/*bar-layout*/
+.progress-bar{
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.contain-element1,
+.contain-element3{
+    display: inline-block;
+    padding: 0 24px;
+    border: 1px solid black;
+    border-radius: 12px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.bar-element3 p,
+.bar-element1 p{
+    line-height: 50px;
+    font-family: "Anton";
+    font-size: 16px;
+    position: relative;
+}
+.bar-element3 p::after,
+.bar-element1 p::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    background-color: black;
+    height: 2px;
+    left: 0;
+    top: 34px;
+}
+.bar-element3 p:hover::after,
+.bar-element1 p:hover::after{
+    width: 100%;
+    transition: width .5s ease-in-out;
+}
+.bar-element2 ul{
+    list-style-type: none;
+    display: flex;
+    border: 1px solid black;
+    border-radius: 12px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.bar-element2 li{
+    line-height: 50px;
+    font-size: 16px;
+    font-family: "Anton";
+    margin: 0 24px;
+    position: relative;
+}
+.bar-element2 li::after{
+    position: absolute;
+    content: '';
+    width: 0;
+    left: 0;
+    top: 34px;
+    height: 2px;
+    background-color: black;
+}
+.bar-element2 li:hover::after{
+    width: 100%;
+    transition: width .5s ease-in-out;
+}
+/*popular-element*/
+.popular-element{
+    width: 100%;
+    height: auto;
+    margin-top: 12px;
+}
+.contain-list{
+    border: 1px solid black;
+    border-radius: 12px;
+    width: 12%;
+    padding: 0 24px;
+}
+.contain-list ul{
+    list-style-type: none;
+}
+.contain-list li{
+    font-size: 16px;
+    font-family: "Anton";
+    line-height: 40px;
+}
+/*filters*/
+.filters{
+    width: 100%;
+    height: auto;
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+.filters p{
+    font-size: 16px;
+    font-family: "Anton";
+}
+.filters input{
+    margin-top: 4px;
+    width: 200px;
+    height: 32px;
+    border-radius: 8px;
+    border: none;
+    background-color: darkgray;
+}
+.filters input:hover{
+    border: 1px solid black;
+    background-color: white;
+}
+/*display image*/
+.display-image{
+    width: 90%;
+    height: auto;
+    margin: 100px 32px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+.image-element2,
+.image-element1{
+    overflow: hidden;
+    height: 0;
+    padding: 50% 0;
+    position: relative;
+    opacity: 0.8;
+    border-radius: 12px;
+}
+.image-element1:hover,
+.image-element2:hover{
+    opacity: 1;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5)
+}
+.image-element2 img,
+.image-element1 img{
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 150%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/*Modal*/
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal img{
+    display: block;
+    max-width: 60%;
+    max-height: 80%;
+    margin: 60px auto;
+    box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(0, 0, 0, 0.5); 
+    border-radius: 12px;
+}
