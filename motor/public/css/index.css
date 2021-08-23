@@ -57,8 +57,8 @@ body {
   height: 100%;
   z-index: 10000;
   background: rgba(0, 0, 0, 0.55);
-  -webkit-backdrop-filter: blur(13.5914px);
-  backdrop-filter: blur(13.5914px);
+  /* -webkit-backdrop-filter: blur(13.5914px);
+  backdrop-filter: blur(13.5914px); */
 }
 img {
   opacity: 1;
@@ -169,8 +169,8 @@ a {
 .mv-nav__white {
   -webkit-border-radius: 4px;
   -moz-border-border-radius: 4px;
-  -webkit-filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.1));
-  filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.1));
+  /* -webkit-filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.1));
+  filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.1)); */
 }
 .mv-nav-onScroll {
   /* box-shadow: rgb(185, 185, 185) 0px 5px 5px -3px; */
