@@ -34,13 +34,13 @@ export default function MotorPageHeader({ headerData }) {
                 <div className="motorPageHeader-Content-center-top">
                   {headerData.manifesto_Arr.map((item, index) => (
                     <div className="motorPageHeader-manifesto">
-                      <ScrollAnimation
+                      {/* <ScrollAnimation
                         delay={index * 300}
                         animateIn="fadeInUp"
                         animateOnce={true}
-                      >
+                      > */}
                         <p>{headerData.manifesto_Arr[index]}</p>
-                      </ScrollAnimation>
+                      {/* </ScrollAnimation> */}
                     </div>
                   ))}
                 </div>

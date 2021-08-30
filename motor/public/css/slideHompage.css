@@ -63,7 +63,7 @@
   text-align: center;
   font-weight: 900;
   position: relative;
-  animation: fades 0.5s ease-in-out, transformTxtReverse 1s ease-in-out;
+  /* animation: fades 0.5s ease-in-out, transformTxtReverse 1s ease-in-out; */
 }
 
 .bt-layout {
