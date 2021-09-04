@@ -30,6 +30,7 @@ import { HistoryPage } from "./generalLayout/slideScrollHorizontal/historyPage";
 import CustomDesign from "./bespoke/customDesign";
 import ImageLibLayout from "./imageLib/imageLibLayout";
 import MyTeamProject from "./myTeamProject/myTeamProject";
+import {SignInPage} from "./generalLayout/signInPage";
 
 function Index() {
   window.addEventListener("scroll", () => {
@@ -71,6 +72,7 @@ function Index() {
             <Route path="/reveal-events" component={Reveal2021Page} />
             <Route path="/history" component={HistoryPage} />
             <Route path="/image-lib" component={ImageLibLayout} />
+            <Route path="/sign-in" component={SignInPage} />
             <Route path="/my-team-projects" component={MyTeamProject} />
             {/* <Route
             path="/brutale1000serieoro"
