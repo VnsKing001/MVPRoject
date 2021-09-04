@@ -1,12 +1,18 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const BackgroundHeader = () => {
 
     return (
         <div className="background-header" >
+            <div className="logo">
+                <img src="./img/imageLibLayout/banner-xl.png" />
+            </div>
             <div className="header-intro" >
-                <h1>ALWAYS FOR YOU</h1>
-                <h2>CLOSE THAN EVER</h2>
+                <h1>
+                    <strong>MV AGUSTA</strong>
+                    <strong>IMAGE</strong>
+                </h1>
             </div>
         </div>
     )
