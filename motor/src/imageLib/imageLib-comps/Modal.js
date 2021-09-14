@@ -15,8 +15,8 @@ const Modal = ({ choose,setChoose }) => {
             animate={{ opacity:1 }}
         >
             <motion.img src={choose} 
-                initial={{ y: "-100vh" }}
-                animate={{ y: 0 }}
+                // initial={{ y: "-100vh" }}
+                // animate={{ y: 0 }}
             />
         </motion.div>
     )
