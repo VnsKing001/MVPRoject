@@ -30,8 +30,7 @@ import { HistoryPage } from "./generalLayout/slideScrollHorizontal/historyPage";
 import CustomDesign from "./bespoke/customDesign";
 import ImageLibLayout from "./imageLib/imageLibLayout";
 import MyTeamProject from "./myTeamProject/myTeamProject";
-import SignInPage from "./generalLayout/signInPage/SignInPage";
-
+import SignInPage from "./generalLayout/signInPage";
 
 function Index() {
   window.addEventListener("scroll", () => {
