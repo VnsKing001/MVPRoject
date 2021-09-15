@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif ;
+}
+/* desktop*/
+#signIn-main{
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 150vh;
+    margin-top: 200px;
+}
+#signIn-logo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+h1{
+    font-size: 20px;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#signIn-contact{
+    width: 100%;
+    height: auto;
+}
+#contact{
+    width: 100%;
+}
+#signIn-information{
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#signIn-information p{
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+}
+.wrap-2-infomation{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    width: 100%;
+    height: auto;
+}
+.second-wrap-2-information{
+    margin-top: 20px;
+}
+.textField_label{
+    color: black !important;
+}
+.textField_label1{
+    color: black !important;
+    font-size: 14px !important;
+}
+#location-infomation{
+    margin-top: 30px;
+    width: 100%;
+}
+#location{
+    width: 100%;
+}
+#wrap-contact{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+#cellphone-information{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+    height: auto;
+}
+#cellphone{
+    bottom: -16px;
+}
+#last-information{
+    margin-top: 30px;
+    width: 100%;
+}
+#signIn-after{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+#signIn-after h5{
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+}
+#first-checkbox-signIn{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+}
+.checkbox-1{
+    margin-top: 10px;
+    display: flex;
+}
+.checkbox{
+    top: -15px;
+}
+#final_button{
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#button{
+    height: 60px;
+    width: 196px;
+    background-color: rgb(255, 24, 24);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#button p{
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+
+/*Mobile* max-width: 725px*/
+@media screen and (max-width : 725px){
+    #signIn-main{
+        max-width: 400px;
+        height: 250vh;
+    }
+    .wrap-2-infomation{
+        grid-template-columns: auto  
+    }
+    #wrap-contact{
+        grid-template-columns: auto;
+        row-gap: 30px;
+    }
+    #cellphone-information{
+        grid-template-columns: auto;
+        row-gap: 30px;
+    }
+
+}
