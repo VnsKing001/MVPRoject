@@ -169,8 +169,10 @@ a {
 .mv-nav__white {
   -webkit-border-radius: 4px;
   -moz-border-border-radius: 4px;
-  /* -webkit-filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.1));
-  filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.1)); */
+  border-radius: 4px;
+  -webkit-box-shadow: 0 5px 10px -5px #cacaca;
+  -moz-box-shadow: 0 5px 10px -5px #cacaca;
+  box-shadow: 0 5px 10px -5px #cacaca;
 }
 .mv-nav-onScroll {
   /* box-shadow: rgb(185, 185, 185) 0px 5px 5px -3px; */
@@ -1098,8 +1100,9 @@ a {
     height: 59px !important;
   }
 }
-@media screen and (max-width: 675px){
-  .email-subscribe, .policy{
+@media screen and (max-width: 675px) {
+  .email-subscribe,
+  .policy {
     height: 20px;
     font-size: 12px;
   }

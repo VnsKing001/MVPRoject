@@ -8,7 +8,7 @@ const SignInPage = () => {
 
     return (
         <>
-            <NavDesktop color="white" />
+            <NavDesktop />
             <Nav color="white" />
             <PageName namePage="MV Agusta Wallpapers" />
             <SignIn />

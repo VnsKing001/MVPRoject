@@ -8,8 +8,6 @@
   position: fixed !important;
   top: 0px;
   z-index: 100;
-  /* filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.1)); */
-  /* transition: 0.1s ease; */
 }
 #nav-logo {
   width: 155px;
@@ -17,8 +15,8 @@
   left: 50%;
   top: -27px;
   transform: translateX(-50%);
-  /* filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.1)); */
   transition: 0.3s ease;
+  cursor: pointer;
 }
 .mv-nav-desk__white {
   background-color: white;
@@ -104,6 +102,9 @@
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   opacity: 1;
+  -webkit-box-shadow: 0 5px 10px -5px #cacaca;
+  -moz-box-shadow: 0 5px 10px -5px #cacaca;
+  box-shadow: 0 5px 10px -5px #cacaca;
 }
 .mv-nav-desktop ul ul li {
   height: calc(5vw + -2px);
@@ -298,6 +299,9 @@
   position: absolute;
   right: 0;
   display: none;
+  -webkit-box-shadow: 0 5px 10px -5px #cacaca;
+  -moz-box-shadow: 0 5px 10px -5px #cacaca;
+  box-shadow: 0 5px 10px -5px #cacaca;
 }
 .nav-dealer {
   height: 190px;
@@ -397,7 +401,7 @@
   margin-right: 20px;
   font-weight: 600;
 }
-.dealer-container a div{
+.dealer-container a div {
   padding-top: 0;
   left: 0;
   text-align: left;
@@ -433,7 +437,8 @@
   /* padding-left: 110.83px; */
   left: -127.83px;
 }
-.nav-ownership a:hover, .dealer-container a:hover {
+.nav-ownership a:hover,
+.dealer-container a:hover {
   font-weight: bold;
 }
 .nav-store {
