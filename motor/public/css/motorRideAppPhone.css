@@ -1,6 +1,6 @@
 .moto-app-container {
   width: 100vw;
-  margin-top: 25vh;
+  margin-top: 18vh;
   position: relative;
 }
 
@@ -219,7 +219,8 @@
 
 @media only screen and (max-width: 650px) {
   .phone-image {
-    width: 650px;
+    /* width: 650px; */
+    width: 100%;
   }
 
   .phone-image img {

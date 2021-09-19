@@ -11,6 +11,7 @@ import Nav from "../generalLayout/nav";
 import NavDesktop from "../generalLayout/navDesk";
 import { MvAssistant } from "./mvAssistant";
 import { AboutUs } from "./aboutUsComponent";
+import LatestNewLayout from "../generalLayout/latestNew/latestNewLayout";
 const namePage = "MV Agusta Homepage";
 
 export function BodyHomepage() {
@@ -33,12 +34,13 @@ export function BodyHomepage() {
       <div className="mv-bg" id="main-bg">
         <SlideImgHomepage />
       </div>
-      <div style={{ height: "10vh" }}></div>
+      <div style={{ height: "8vh" }}></div>
       <div className="mv-about-us" id="mv-about-us">
         <AboutUs />
       </div>
       <MvTagType />
       <MvTagMobile />
+      <LatestNewLayout />
       <MvAssistant />
       <MVSpecialPart />
     </>

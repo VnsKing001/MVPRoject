@@ -5,6 +5,8 @@
 .bespoke-bg {
   margin-top: -29px;
   width: 100vw !important;
+  height: 105vh;
+  position: relative;
 }
 .title-header-bs {
   margin: 0 auto;
@@ -39,7 +41,9 @@
 }
 .img-banner-bespoke {
   width: 100%;
-  margin-bottom: -4px;
+  /* margin-bottom: -4px; */
+  position: absolute;
+  bottom: 0;
 }
 
 .active_image {
@@ -371,7 +375,7 @@ label > a:active {
 
 @media screen and (max-width: 1200px) {
   .title-header-bs {
-    top: 110px;
+    top: 150px;
   }
   .title-header-bs > h1 strong {
     font-size: 60px;
@@ -497,6 +501,9 @@ label > a:active {
 }
 
 @media screen and (max-width: 600px) {
+  .bespoke-bg {
+    max-height: 750px;
+  }
   .title-header-bs {
     top: 150px;
   }

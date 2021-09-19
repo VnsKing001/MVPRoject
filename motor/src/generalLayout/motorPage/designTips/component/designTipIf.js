@@ -2,7 +2,7 @@ import HorizontalScroll from "react-scroll-horizontal";
 import ReactDOM from "react-dom";
 import React from "react";
 export default function DesignTipIf({ DTInfs }) {
-  const parent = { width: `100em`, height: `100%` };
+  const parent = { width: `100%`, height: `100%` };
   function CloseDesignTip() {
     document.querySelector("body").style.overflow = "auto";
     document.getElementById("designTips-if").classList.remove("dt-show");
@@ -22,7 +22,7 @@ export default function DesignTipIf({ DTInfs }) {
   );
 }
 function DesignTipIfMobile({ DTInfs }) {
-  const child = { width: `100%`, height: `96%` };
+  const child = { width: `100%`};
   return (
     <div className="ds-mob">
       {DTInfs.map((DTInf) => (
