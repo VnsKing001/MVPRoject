@@ -41,7 +41,7 @@ export function BodyHomepage() {
       <MvTagType />
       <MvTagMobile />
       <LatestNewLayout />
-      <MvAssistant />
+      {/* <MvAssistant /> */}
       <MVSpecialPart />
     </>
   );
