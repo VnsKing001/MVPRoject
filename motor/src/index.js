@@ -31,6 +31,7 @@ import CustomDesign from "./bespoke/customDesign";
 import ImageLibLayout from "./imageLib/imageLibLayout";
 import MyTeamProject from "./myTeamProject/myTeamProject";
 import SignInPage from "./generalLayout/signInPage/SignInPage";
+import CategoryLayout from "./generalLayout/motorPage/category/CategoryLayout";
 
 function Index() {
   window.addEventListener("scroll", () => {
@@ -68,6 +69,7 @@ function Index() {
             <Route path="/buy-your-mv" component={BuyYourMvLayout} />
             <Route path="/custom-design" component={CustomDesign} />
             <Route path="/monaco-design-studio" component={BespokeLayout} />
+            <Route path="/mv-category" component={CategoryLayout} />
 
             <Route path="/reveal-events" component={Reveal2021Page} />
             <Route path="/history" component={HistoryPage} />

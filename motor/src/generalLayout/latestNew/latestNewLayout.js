@@ -11,7 +11,7 @@ export default function LatestNewLayout() {
         <div className="mv__latest-new-body">
           <LatestNewCard />
           <LatestNewCard />
-          {/* <LatestNewCard /> */}
+          <LatestNewCard />
         </div>
         {/* <div class="about-us-button-container mv__latest-new-explore-container">
           <a href> Explore more</a>
