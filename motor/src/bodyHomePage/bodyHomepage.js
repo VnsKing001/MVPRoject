@@ -12,6 +12,7 @@ import NavDesktop from "../generalLayout/navDesk";
 import { MvAssistant } from "./mvAssistant";
 import { AboutUs } from "./aboutUsComponent";
 import LatestNewLayout from "../generalLayout/latestNew/latestNewLayout";
+import ContentGM from "../generalLayout/contentGM/contentGM";
 const namePage = "MV Agusta Homepage";
 
 export function BodyHomepage() {
@@ -41,6 +42,7 @@ export function BodyHomepage() {
       <MvTagType />
       <MvTagMobile />
       <LatestNewLayout />
+      <ContentGM />
       {/* <MvAssistant /> */}
       <MVSpecialPart />
     </>

@@ -1,0 +1,25 @@
+.mv__content-gm-layout {
+  width: 100%;
+  margin: 12vh 0;
+}
+.mv__content-gm-layout img {
+  width: 100%;
+}
+.mv__content-gm-lt-title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.mv__content-gm-lt-title h3 {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: anton;
+  font-size: calc(50px + 78 * (30vw - 320px) / 1333);
+}
+.mv__content-gm-lt-title section {
+  font-family: Questrial;
+  font-size: 20px;
+  max-width: 350px;
+  text-align: center;
+  margin-bottom: 10px;
+}

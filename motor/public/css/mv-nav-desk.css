@@ -384,7 +384,7 @@
 }
 .ownership-container a div,
 .dealer-container a div {
-  transition: 0s ease;
+  transition: .2s ease;
   padding-top: 25px;
   height: 100%;
   position: absolute;
@@ -397,7 +397,8 @@
   text-align: right;
   line-height: 105%;
   top: 0;
-  display: none;
+  /* display: none; */
+  opacity: 0;
   margin-right: 20px;
   font-weight: 600;
 }
@@ -409,7 +410,8 @@
 }
 .ownership-container a:hover div,
 .dealer-container a:hover div {
-  display: block;
+  /* display: block; */
+  opacity: 1;
 }
 #dealer-tag-nav:hover .nav-dealer,
 #company-tag-nav:hover .nav-company,

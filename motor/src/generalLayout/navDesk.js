@@ -297,6 +297,8 @@ export default function NavDesktop({ colorBlack }) {
             .getElementsByClassName("mv-nav-desktop")[0]
             .classList.add("mv-nav-desk__white");
           document.getElementById("nav-logo").style.display = "none";
+          document.getElementById("body").style.overflow = "hidden";
+          document.getElementById("body").classList.add("unable");
         });
       document
         .getElementsByClassName("mv-nav-dk")
@@ -305,6 +307,8 @@ export default function NavDesktop({ colorBlack }) {
             .getElementsByClassName("mv-nav-desktop")[0]
             .classList.remove("mv-nav-desk__white");
           document.getElementById("nav-logo").style.display = "block";
+          document.getElementById("body").style.overflow = "scroll";
+          document.getElementById("body").classList.remove("unable");
         });
     }
     for (
