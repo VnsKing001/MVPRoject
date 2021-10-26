@@ -1,0 +1,313 @@
+#wrap_body{
+    min-width: 320px;
+}
+/**
+ * Begin ViewAll
+ */
+#slide1{
+    margin-top: 100px;   
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 100px;
+}
+#slide1_title{
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+#slide1_title #h2_sub{
+    opacity: 0.3;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+#slide1_title #h2_sub:hover{
+    opacity: 1;
+}
+.swiper {
+    padding-bottom: 150px;
+    position: relative;
+    overflow: hidden;
+}
+.my-swiper-slide{
+    background-color: #e2e2e2;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+    width: calc( ( 100% - 20px )/3);
+}
+.my-swiper-slide img{
+    width: 100%;
+    user-select: none;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.slide_new{
+    padding: 3px 7px;
+    position: absolute;
+    top:10px;
+    left:10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    font-size: 17px;
+    opacity: 1;
+    transition: .2s ease-in-out;
+}
+.my-swiper-slide:hover span{
+    opacity: 0;
+}
+.swiper-pagination-bullet-active {
+    transform: scale(1.5);
+    background: #000;
+}
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, 
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0px 7px;
+}
+.swiper-horizontal>.swiper-pagination-bullets, 
+.swiper-pagination-bullets.swiper-pagination-horizontal, 
+.swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 0px;
+}
+.wrap_swiper_information{
+    width: 100%;
+    position: absolute;
+    left:0px;
+    top: calc( 100% + 10px );
+    display: flex;
+    justify-content: space-between;
+}
+.slide1_information {
+    font-size: 17px;
+}
+.slide1_information p{
+    color: rgb(50, 50, 50);
+    width: 75%;
+}
+.swiper_logo_image{
+    display: flex;
+}
+.swiper_logo_image img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    margin-top: 0px;
+    margin-left: 7px;    
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 3px;
+}
+#slide1_block1_image,
+#slide1_block3_image,
+#slide1_block4_image,
+#slide1_block5_image,
+#slide1_block7_image{
+    transition: .3s linear;
+}
+#slide1_block1_logo1,
+#slide1_block3_logo1,
+#slide1_block4_logo1,
+#slide1_block5_logo1,
+#slide1_block7_logo1{
+    border: 1px solid rgba(0,0,0,1);
+    transition: .2s linear;
+}
+#slide1_block1_logo2,
+#slide1_block3_logo2,
+#slide1_block4_logo2,
+#slide1_block4_logo3,
+#slide1_block5_logo2,
+#slide1_block7_logo2{
+    border: 1px solid rgba(0,0,0,0);
+    transition: .2s linear;
+}
+
+/**
+ * Begin NavShop
+ */
+
+#slide2{
+    height:720px;
+    background-image: url('../assets/images/slide2_1st.jpg');
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 100px;
+}
+#slide2::after{
+    content: '';
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.1);
+    z-index: 1;
+}
+#wrap_slide2_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+#slide2_title {
+    font-size: 75px;
+    color: #fff;
+    margin-bottom: 50px;
+    text-align: center;
+    width: 100%;
+}
+#slide2_button{
+    width: 160px;
+    height:55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    border:1px solid #fff;
+    overflow: hidden;
+    cursor: pointer;
+}
+#slide2_button_content{
+    color:#fff;
+    transform: translateY(25.5px);
+    transition: .25s ease-in-out;
+}
+#slide2_button_content p{
+    line-height: 55px;
+}
+#slide2_button:hover #slide2_button_content{
+    transform: translateY(-25.5px);
+}
+
+/** 
+ * Begin slide 3
+ */
+#slide3{
+    margin-bottom: 100px;
+}
+#slide3_title{  
+    margin-bottom: 20px;
+    font-size: 22px;
+    margin-left: 10px;
+}
+#slide3_title #h2_sub{
+    opacity: 0.3;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+#slide3_title #h2_sub:hover{
+    opacity: 1;
+}
+#slide3_level{
+    font-size: 25px;
+}
+#wrap_slide3_card{
+    display: grid;
+    grid-template-columns: auto auto;
+    color:#fff;
+}
+.slide3_card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card2_explain{
+    position: absolute;
+    opacity: 0;
+    top: 100px;
+    font-size: 18px;
+    line-height: 27px;
+    width: 100%;
+}
+.card2_explain p{
+    margin: 0 15px;
+}
+.slide3_card::after{
+    position: absolute;
+    top:0px;
+    left:0px;
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(204, 204, 204, 0);
+    transition: .2s linear;
+}
+.slide3_card:hover::after{
+    position: absolute;
+    top:0px;
+    left:0px;
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(100, 100, 100, 0.6);
+}
+.slide3_card:hover:nth-child(2) .card2_explain{
+    opacity: 1;
+}
+.slide3_card img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+.slide3_card .slide3_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    z-index: 2;
+    width: 100%;
+}
+.slide3_name_card{
+    font-size: 22px;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+    width: 100%;
+}
+.slide3_level{
+    font-size: 45px;
+    font-weight: 600;
+    letter-spacing: -1.5px;
+}
+
+/**
+ * Begin slide4
+ */
+#slide4{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#slide4_title{
+    margin-bottom: 20px;
+}
+.swiper2{
+    padding-bottom: 40px;
+}
+.slide4_content{
+    width: 75%;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: #fff;
+    font-size: 15px;
+    padding: 10px 10px;
+    border-radius: 3px;
+}
+#slide4 .swiper-slide{
+    width: calc( ( 100% - 30px )/4);
+    background-color: #e2e2e2;
+}
+#slide4 img{
+    width: 100%;
+    object-fit: cover;
+}
+
