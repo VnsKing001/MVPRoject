@@ -9,3 +9,5 @@ react lib
  npm install react-reveal
 --:react-animate-on-scroll
  npm install react-animate-on-scroll
+--:react-swiper
+ npm i swiper
