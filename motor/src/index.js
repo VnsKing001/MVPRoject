@@ -32,6 +32,7 @@ import ImageLibLayout from "./imageLib/imageLibLayout";
 import MyTeamProject from "./myTeamProject/myTeamProject";
 import SignInPage from "./generalLayout/signInPage/SignInPage";
 import CategoryLayout from "./generalLayout/motorPage/category/CategoryLayout";
+import MvCategoryLayout from "./generalLayout/mvCategory/MvCategoryLayout";
 
 function Index() {
   window.addEventListener("scroll", () => {
@@ -69,7 +70,7 @@ function Index() {
             <Route path="/buy-your-mv" component={BuyYourMvLayout} />
             <Route path="/custom-design" component={CustomDesign} />
             <Route path="/monaco-design-studio" component={BespokeLayout} />
-            <Route path="/mv-category" component={CategoryLayout} />
+            <Route path="/mv-eshopping" component={CategoryLayout} />
 
             <Route path="/reveal-events" component={Reveal2021Page} />
             <Route path="/history" component={HistoryPage} />
@@ -89,6 +90,7 @@ function Index() {
               component={Brutale800RR_SCS_Body}
             />
             <Route path="/superveloce-alpine" component={SuperveloceAlpine} />
+            <Route path="/mv-category" component={MvCategoryLayout}/>
           </Switch>
           <MvEmail />
           <FooterGe />
