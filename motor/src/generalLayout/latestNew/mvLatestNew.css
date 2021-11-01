@@ -30,7 +30,7 @@
   -ms-flex-align: stretch;
   align-items: stretch;
   border-radius: 3px;
-  overflow: hidden;
+  /* overflow: hidden; */
   /* -webkit-box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
   box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%); */
   text-decoration: none;
@@ -39,7 +39,6 @@
   transition: box-shadow 0.3s;
   transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
   width: 33%;
-  height: 38vw;
   min-height: 460px;
 }
 
@@ -99,7 +98,7 @@
 
 .mv__latest-new-card-content-wrap .mln-title {
   word-wrap: break-word;
-  font-family: "bebas neue", arial;
+  font-family: Anton, "bebas neue", arial;
   font-weight: 400;
   font-size: 2.2rem;
 }
@@ -139,14 +138,17 @@
 @media  screen and (max-width: 775px){
   .mv__latest-new-card {
     width: 100%;
-    min-height: calc((100vw - 50px) * 1.25);
+    min-height: calc((80vw - 50px) * 1.25);
     margin-bottom: 45px;
   }
   .mv__latest-new-body{
     padding: 70px 0 0 0;
   }
   .mv__latest-ncb-picture-wrap{
-    height: 85%;
+    height: 450px
+  }
+  .mv__latest-new-card-body .mv__latest-new-card-content-wrap {
+    height: auto;
   }
 }
 @media screen and (max-width: 665px){

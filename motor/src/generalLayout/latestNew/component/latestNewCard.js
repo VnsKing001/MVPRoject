@@ -1,6 +1,9 @@
 import React from "react";
+import defaultImg from '../img/2.jpg';
 
-export default function LatestNewCard() {
+const defaultImage = defaultImg;
+
+export default function LatestNewCard({img = defaultImage, title = "Empty Title", content = "Empty Content"}) {
   return (
     <div className="mv__latest-new-card">
       <div className="mv__latest-new-card-body">
@@ -8,28 +11,26 @@ export default function LatestNewCard() {
           <picture>
             <source
               media="(max-width: 1500px)"
-              srcSet="./img/latestNews/rush-1000-2021-xl_1366.png"
-              type="image/png"
+              srcSet={img}
             ></source>
             <source
               media="(min-width: 1501px)"
-              srcSet="./img/latestNews/rush-1000-2021-xl_1900.png"
-              type="image/png"
+              srcSet={img}
             ></source>
             <img
               className="mv__latest-ncb-picture"
               loading="lazy"
-              src="./img/latestNews/rush-1000-2021-xl_1900.png"
+              src={img}
               alt="news"
             ></img>
           </picture>
         </a>
         <div className="mv__latest-new-card-content-wrap">
           <a href className="mln-title">
-            aaaaa
+            {title}
           </a>
           <a href className="mln-content">
-            ahihihihihi ahihihih ahiahindhj fsifhskjfsid fhsihfksnfmsdnm
+            {content}
           </a>
         </div>
       </div>
