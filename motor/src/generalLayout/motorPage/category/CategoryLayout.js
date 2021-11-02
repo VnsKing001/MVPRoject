@@ -13,7 +13,7 @@ import "./styles/responsive.css";
 export default function CategoryLayout() {
   return (
     <>
-      <NavDesktop />
+      <NavDesktop colorBlack={true}/>
       <Nav color="white" />
       <PageName namePage={"MV Category"} />
       <div id="wrap_body">
