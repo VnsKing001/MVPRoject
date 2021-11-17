@@ -133,7 +133,7 @@ export default function TypeMotor() {
     const handleClick = () => {
       get("/motor?type=Rush").then((response) => {
         // setMotors({ ["Rush"]: response.data });
-        setMotors({ "Rush": response.data });
+        setMotors({ Rush: response.data });
       });
       setSelectedType("Rush");
     };

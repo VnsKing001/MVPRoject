@@ -46,7 +46,6 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    margin-top: 135px;
     text-align: center;
     margin-bottom: 135px;
 }
@@ -59,12 +58,14 @@
     transform: translateX(-50%);
     line-height: 90px;
     margin:0px;
+    font-family: "Anton";
 }
 #slide1_title_replace{
     display: none;
     font-size: 50px;
     letter-spacing: 1px;
     margin: 0px;
+    font-family: "Anton";
 }
 #wrap_slide1_para {
     font-size: 18px;
@@ -113,6 +114,7 @@
     width: 180%;
 }
 .card_name {
+    font-family: "Anton", sans-serif;
     font-size: 45px;
     position: absolute;
     left: 25px;
@@ -121,6 +123,7 @@
     color: #000;
     transition: .25s ease-in-out;
     margin:0px;
+    letter-spacing: 1.5px;
 }
 .card::after{
     position: absolute;
@@ -175,16 +178,23 @@
     line-height: 45px;
     padding-right: 5px;
 }
-.number h2{
+.block_information .number h2{
     margin: 0px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0, .8);
 }
-.sub_number {
+.block_information .sub_number {
+    text-transform: uppercase;
+    font-family: "Bebas Neue";
     position: absolute;
-    top: 0px;
-    left: 100%;
-    font-size: 14px;
+    top: 0;
+    letter-spacing: 1px;
+    left: 95%;
+    font-size: 16px;
     margin: 0px;
     line-height: initial;
+    color: rgb(0, 0, 0, 0.7);
 }
 .block_information{
     margin: 0px 3.8% 20px 20px;
@@ -293,24 +303,26 @@
     justify-content: center;
     min-width: 320px;
 }
-#other_models p {
-    font-size: 26px;
-    margin-bottom: 30px;
-    letter-spacing: 3px;
+#other_models #see_also {
+    font-size: 50px;
+    font-weight: 600;
+    font-family: "Bebas Neue";
+    margin-bottom: 10px;
 }
 #other_models a {
     font-size: calc(38px + 12*(100vw -320px)/(1650 - 320));
     line-height: 0px;
-    letter-spacing: 3.3px;
-    color: rgba(0,0,0,1);
+    color: rgba(0,0,0,.6);
     width: -moz-fit-content;
     width: fit-content;
     transition: .2s ease-in-out;
     line-height: 40px;
-    font-size: 25px;
+    font-size: 30px;
+    font-family: "Bebas Neue";
+    font-weight: 900;
 }
 #other_models a:hover{
-    color: rgba(0,0,0,0.65);
+    color: rgba(0,0,0,1);
     cursor: pointer;
 }
 #wrap_other_models{

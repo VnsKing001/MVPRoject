@@ -434,7 +434,8 @@ const NavDealer = () => {
           <a href="certificate">
             Certificate
             <div>
-              OUR CERTIFICATION WILL HELP CUSTOMERS ALWAYS GET THE BEST EXPERIENCE
+              OUR CERTIFICATION WILL HELP CUSTOMERS ALWAYS GET THE BEST
+              EXPERIENCE
             </div>
           </a>
         </div>
@@ -544,10 +545,7 @@ const NavCompany = () => {
           >
             Youtube
           </a>
-          <a
-            href="my-team-projects"
-            target="_blank"
-          >
+          <a href="my-team-projects" target="_blank">
             My team Project
           </a>
         </div>
