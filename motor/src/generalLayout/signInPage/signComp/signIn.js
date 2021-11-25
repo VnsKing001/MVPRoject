@@ -52,7 +52,7 @@ const SignIn = () => {
           backgroundImage: "url('./img/bg4.jpg')",
         }}
       />
-      <Container maxWidth="md" className="sgn-in-card">
+      <Container maxWidth="md" className="sign-in-card">
         <Box
           display="flex"
           alignItems="center"
@@ -192,10 +192,26 @@ const SignIn = () => {
               <button>
                 <a href>SIGN UP</a>
               </button>
+              <span className="mv-login-nt">
+                Already have account? <a href="">Login</a>
+              </span>
             </div>
           </div>
         </Box>
       </Container>
+    </div>
+  );
+};
+
+const SignUpLayout = () => {
+  return (
+    <div id="content">
+      <div
+        className="ct-bg mv__sign-in-up-bg"
+        style={{
+          backgroundImage: "url('./img/bg4.jpg')",
+        }}
+      />
     </div>
   );
 };

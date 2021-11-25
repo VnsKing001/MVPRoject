@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BodyHomepage } from "./bodyHomePage/bodyHomepage";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch, NavLink, Link } from "react-router-dom";
 import BodyBrutale1000RR from "./motor_item_page/brutale1000rr_body";
 import Rush1000 from "./motor_item_page/rush1000_body";
 import "animate.css/animate.min.css";
@@ -32,7 +32,10 @@ import ImageLibLayout from "./imageLib/imageLibLayout";
 import MyTeamProject from "./myTeamProject/myTeamProject";
 import SignInPage from "./generalLayout/signInPage/SignInPage";
 import CategoryLayout from "./generalLayout/motorPage/category/CategoryLayout";
-import MvCategoryLayout from "./generalLayout/mvCategory/MvCategoryLayout";
+import MvCategoriesLayout from "./generalLayout/mvCategory/MvCategoriesLayout";
+import DragsterCategory from "./generalLayout/mvCategory/DragsterCategory";
+import RushCategory from "./generalLayout/mvCategory/RushCategory";
+import BrutaleCategory from "./generalLayout/mvCategory/BrutaleCategory";
 
 function Index() {
   window.addEventListener("scroll", () => {
@@ -71,7 +74,6 @@ function Index() {
             <Route path="/custom-design" component={CustomDesign} />
             <Route path="/monaco-design-studio" component={BespokeLayout} />
             <Route path="/mv-eshopping" component={CategoryLayout} />
-
             <Route path="/reveal-events" component={Reveal2021Page} />
             <Route path="/history" component={HistoryPage} />
             <Route path="/image-lib" component={ImageLibLayout} />
@@ -90,7 +92,15 @@ function Index() {
               component={Brutale800RR_SCS_Body}
             />
             <Route path="/superveloce-alpine" component={SuperveloceAlpine} />
-            <Route path="/mv-category" component={MvCategoryLayout}/>
+            <Switch>
+              <Route path="/mv-category" component={MvCategoriesLayout} exact />
+              <Route
+                path="/mv-category/dragster"
+                component={DragsterCategory}
+              />
+              <Route path="/mv-category/rush" component={RushCategory} />
+              <Route path="/mv-category/brutale" component={BrutaleCategory} />
+            </Switch>
           </Switch>
           <MvEmail />
           <FooterGe />

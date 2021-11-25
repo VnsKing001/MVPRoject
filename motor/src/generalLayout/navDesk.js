@@ -362,7 +362,7 @@ export default function NavDesktop({ colorBlack }) {
                     {navMotorData.type}
                     <img
                       alt=""
-                      src={`./img/img-tag/${navMotorData.img_pop}`}
+                      src={`/img/img-tag/${navMotorData.img_pop}`}
                       height="100%"
                     ></img>
                   </a>
@@ -409,7 +409,7 @@ export default function NavDesktop({ colorBlack }) {
         </ul>
 
         <a href="homepage" style={{ width: "140px" }}>
-          <img alt="" src="./img/mv-agusta-logo.png" id="nav-logo"></img>
+          <img alt="" src="/img/mv-agusta-logo.png" id="nav-logo"></img>
         </a>
       </nav>
     </>
@@ -499,14 +499,14 @@ const NavStore = () => {
           <h3>Special Part</h3>
           <span>Upgrade to next level</span>
           <div className="store-nav__img">
-            <img alt="" src="./img/special_parts.png"></img>
+            <img alt="" src="/img/special_parts.png"></img>
           </div>
         </div>
         <div className="store-container">
           <h3>Apparel</h3>
           <span>We ride it. We wear it</span>
           <div className="store-nav__img">
-            <img alt="" src="./img/apparel.png"></img>
+            <img alt="" src="/img/apparel.png"></img>
           </div>
         </div>
       </div>
@@ -563,7 +563,7 @@ const NavModel = ({ model }) => {
             <div className="motor-infor-lt">
               <img
                 width="100%"
-                src={`./img/navDesktop/motor-banner/${model.imgModelSrc}`}
+                src={`/img/navDesktop/motor-banner/${model.imgModelSrc}`}
                 alt=""
               ></img>
               <div className="motor-if-lt">
@@ -575,7 +575,7 @@ const NavModel = ({ model }) => {
                       maxHeight: "30px",
                     }}
                     alt=""
-                    src={`./img/navDesktop/motor-i/${model.imgLogoSrc}`}
+                    src={`/img/navDesktop/motor-i/${model.imgLogoSrc}`}
                   ></img>
                   <p>
                     Starting from <span>{model.prize} $</span>
