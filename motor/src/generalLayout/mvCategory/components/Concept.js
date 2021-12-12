@@ -12,7 +12,7 @@ const Concept = ({ data }) => {
           <source srcSet={data.background.small} media="(max-width: 575px)" />
           <img src={data.background.large} alt="Agusta motor" />
         </picture>
-        <p id="slide3_para">
+        <span id="slide3_para">
           {data.content.map((cont, key) => {
             return (
               <>
@@ -22,7 +22,7 @@ const Concept = ({ data }) => {
               </>
             );
           })}
-        </p>
+        </span>
       </div>
     </div>
   );

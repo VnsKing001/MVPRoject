@@ -6,7 +6,6 @@ import LookBook from "./components/LookBook";
 import AllCategories from "./components/AllCategories";
 import ViewAll from "./components/ViewAll";
 
-
 import "./styles/motorCategory.css";
 import "./styles/responsive.css";
 

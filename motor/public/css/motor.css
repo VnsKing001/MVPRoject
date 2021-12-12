@@ -208,7 +208,8 @@
   border: 1px solid white;
 }
 .m-i-l-p {
-  width: 180px;
+  font-weight: 500;
+  width: 190px;
   font-size: 11px;
   height: 30px;
   display: flex;

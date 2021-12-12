@@ -107,7 +107,7 @@
   color: white;
   line-height: 85%;
   font-weight: 900;
-  font-size: calc(10vw * 0.55);
+  font-size: calc(10vw * 0.35);
   text-transform: uppercase;
   transition: 0.6s ease;
   position: relative;

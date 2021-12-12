@@ -36,6 +36,8 @@ import MvCategoriesLayout from "./generalLayout/mvCategory/MvCategoriesLayout";
 import DragsterCategory from "./generalLayout/mvCategory/DragsterCategory";
 import RushCategory from "./generalLayout/mvCategory/RushCategory";
 import BrutaleCategory from "./generalLayout/mvCategory/BrutaleCategory";
+import F3Category from "./generalLayout/mvCategory/F3Category";
+import F3_800_RR_Body from "./motor_item_page/f3_800_rr_body";
 
 function Index() {
   window.addEventListener("scroll", () => {
@@ -67,25 +69,22 @@ function Index() {
             <Route path="/dragster800rr" component={BodyDragster800RR} />
             <Route path="/dragster800rrscs" component={Dragster800RR_SCS} />
             <Route path="/brutale1000rr" component={BodyBrutale1000RR} />
-            <Route path="/certificate" component={Container} />
-            <Route path="/warranty" component={WarrantyLayout} />
-            <Route path="/news" component={NewsMV} />
-            <Route path="/buy-your-mv" component={BuyYourMvLayout} />
-            <Route path="/custom-design" component={CustomDesign} />
+            <Route path="/certificate" component={Container} exact />
+            <Route path="/warranty" component={WarrantyLayout} exact />
+            <Route path="/news" component={NewsMV} exact />
+            <Route path="/buy-your-mv" component={BuyYourMvLayout} exact />
+            <Route path="/custom-design" component={CustomDesign} exact />
             <Route path="/monaco-design-studio" component={BespokeLayout} />
-            <Route path="/mv-eshopping" component={CategoryLayout} />
-            <Route path="/reveal-events" component={Reveal2021Page} />
-            <Route path="/history" component={HistoryPage} />
-            <Route path="/image-lib" component={ImageLibLayout} />
-            <Route path="/sign-in" component={SignInPage} />
+            <Route path="/mv-eshopping" component={CategoryLayout} exact />
+            <Route path="/reveal-events" component={Reveal2021Page} exact />
+            <Route path="/history" component={HistoryPage} exact />
+            <Route path="/image-lib" component={ImageLibLayout} exact />
+            <Route path="/sign-in" component={SignInPage} exact />
             <Route path="/my-team-projects" component={MyTeamProject} />
-            {/* <Route
-            path="/brutale1000serieoro"
-            component={BodyBrutale1000SerieOro}
-          /> */}
             <Route path="/rush1000" component={Rush1000} />
             <Route path="/dragster800rosso" component={Dragster800Rosso} />
             <Route path="/f3-800" component={F3_800_Body} />
+            <Route path="/f3-800-rr" component={F3_800_RR_Body} />
             <Route path="/brutale800rr" component={Brutale800RRBody} />
             <Route
               path="/brutale-800-rr-scs"
@@ -100,6 +99,7 @@ function Index() {
               />
               <Route path="/mv-category/rush" component={RushCategory} />
               <Route path="/mv-category/brutale" component={BrutaleCategory} />
+              <Route path="/mv-category/f-sport" component={F3Category} />
             </Switch>
           </Switch>
           <MvEmail />

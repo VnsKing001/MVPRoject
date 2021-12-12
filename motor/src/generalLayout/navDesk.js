@@ -7,7 +7,7 @@ const navMotorsData = [
     models: [
       {
         name: "1000",
-        link: "rush1000",
+        link: "/rush1000",
         imgModelSrc: "rush-1000.webp",
         imgLogoSrc: "rush-1000.svg",
         prize: "34.000",
@@ -32,7 +32,7 @@ const navMotorsData = [
       },
       {
         name: "RR",
-        link: "brutale800rr",
+        link: "/brutale800rr",
         imgModelSrc: "brutale-800-rr.webp",
         imgLogoSrc: "brutale-800-rr-pop.svg",
         prize: "34.000",
@@ -42,7 +42,7 @@ const navMotorsData = [
       },
       {
         name: "RR SCS",
-        link: "brutale-800-rr-scs",
+        link: "/brutale-800-rr-scs",
         imgModelSrc: "brutale-800-rr-scs.webp",
         imgLogoSrc: "brutale-800-rr-scs-pop.svg",
         prize: "34.000",
@@ -52,7 +52,7 @@ const navMotorsData = [
       },
       {
         name: "1000 RR",
-        link: "brutale1000rr",
+        link: "/brutale1000rr",
         imgModelSrc: "brutale-1000-rr.webp",
         imgLogoSrc: "brutale-1000-rr-pop.svg",
         prize: "34.000",
@@ -78,7 +78,7 @@ const navMotorsData = [
     models: [
       {
         name: "ROSSO",
-        link: "dragster800rosso",
+        link: "/dragster800rosso",
         imgModelSrc: "dragster-800-rosso.webp",
         imgLogoSrc: "dragster-800-rosso-pop.svg",
         prize: "34.000",
@@ -88,7 +88,7 @@ const navMotorsData = [
       },
       {
         name: "RR",
-        link: "dragster800rr",
+        link: "/dragster800rr",
         imgModelSrc: "dragster-800-rr-2021.webp",
         imgLogoSrc: "dragster-800-rr-pop.svg",
         prize: "34.000",
@@ -98,7 +98,7 @@ const navMotorsData = [
       },
       {
         name: "RR SCS",
-        link: "dragster800rrscs",
+        link: "/dragster800rrscs",
         imgModelSrc: "dragster-800-rr-scs-2021.webp",
         imgLogoSrc: "dragster-800-rr-scs-pop.svg",
         prize: "34.000",
@@ -165,7 +165,7 @@ const navMotorsData = [
     models: [
       {
         name: "800",
-        link: "f3-800",
+        link: "/f3-800",
         imgModelSrc: "f3-800.webp",
         imgLogoSrc: "f3-800-pop.svg",
         prize: "34.000",
@@ -174,8 +174,8 @@ const navMotorsData = [
         hp: 153,
       },
       {
-        name: "800 RC",
-        link: "f3-800rc",
+        name: "800 RR",
+        link: "/f3-800-rr",
         imgModelSrc: "f3-800-rc.webp",
         imgLogoSrc: "f3-800-rc-pop.svg",
         prize: "34.000",
@@ -200,7 +200,7 @@ const navMotorsData = [
       },
       {
         name: "ALPINE",
-        link: "superveloce-alpine",
+        link: "/superveloce-alpine",
         imgModelSrc: "sp-alpine.webp",
         imgLogoSrc: "superveloce-alpine-pop.svg",
         prize: "34.000",
@@ -396,7 +396,7 @@ export default function NavDesktop({ colorBlack }) {
             className={"mv-nav-dk mv-nav-right " + colorNavTag}
             id="dealer-tag-nav"
           >
-            <a href>Dealer</a>
+            <a href>Dealers</a>
             <NavDealer />
           </li>
           <li
@@ -408,7 +408,7 @@ export default function NavDesktop({ colorBlack }) {
           </li>
         </ul>
 
-        <a href="homepage" style={{ width: "140px" }}>
+        <a href="/homepage" style={{ width: "140px" }}>
           <img alt="" src="/img/mv-agusta-logo.png" id="nav-logo"></img>
         </a>
       </nav>
@@ -420,18 +420,18 @@ const NavDealer = () => {
     <>
       <div className="mv-pr-layout nav-dealer">
         <div className="dealer-container">
-          <a href="my-portfolio">
+          <a href="/my-portfolio">
             My Portfolio
             <div>
               HELLO I'M KING, THIS IS MY TEAM CLONE PRODUCT. TAKE A LOOK FOR
               MORE INFORMATION
             </div>
           </a>
-          <a href="sign-in">
+          <a href="/sign-in">
             Sign In
             <div>CONNECT TO US WITH YOUR PERSONAL ACCOUNT</div>
           </a>
-          <a href="certificate">
+          <a href="/certificate">
             Certificate
             <div>
               OUR CERTIFICATION WILL HELP CUSTOMERS ALWAYS GET THE BEST
@@ -448,41 +448,41 @@ const NavOwnership = () => {
     <>
       <div className="mv-pr-layout nav-ownership">
         <div className="ownership-container">
-          <a href="buy-your-mv">
+          <a href="/buy-your-mv">
             Buy Your MV
             <div>
               THE 7-STEP JOURNEY TO BECOMING THE PROUD OWNER OF AN MV AGUSTA
             </div>
           </a>
-          <a href="special-deals">
+          <a href="/special-deals">
             Special Deals
             <div>
               DISCOVER ALL THE SPECIAL DEALS, ONLINE OR AT AN OFFICIAL MV AGUSTA
               DEALER NEAR YOU
             </div>
           </a>
-          <a href="mv-ride-app">
+          <a href="/mv-ride-app">
             MV Ride App
             <div>
               GET CONNECTED TO YOUR BIKE AND LIVE THE MV AGUSTA DIGITAL
               EXPERIENCE
             </div>
           </a>
-          <a href="service-locator">
+          <a href="/service-locator">
             Service Locator
             <div>
               WORLD-CLASS, SPECIALISED SERVICE FOR YOUR MV AGUSTA IS ALWAYS
               AVAILABLE AT AN OFFICIAL DEALER NEAR YOU
             </div>
           </a>
-          <a href="warranty">
+          <a href="/warranty">
             Warranty
             <div>
               ALL THE DETAILS OF YOUR STANDARD 3 YEARS MANUFACTURER’S WARRANTY,
               AND HOW TO EXTEND IT
             </div>
           </a>
-          <a href="image-lib">
+          <a href="/image-lib">
             My Image
             <div>EXPLORE OUR MV AGUSTA WALLPAPER'S WORLD LIBRARY</div>
           </a>
@@ -519,17 +519,17 @@ const NavCompany = () => {
       <div className="mv-pr-layout nav-company">
         <div className="company-container">
           <h3>OUT BRAND</h3>
-          <a href="about-us">About Us</a>
-          <a href="history">History</a>
-          <a href="research-center">Research Center</a>
-          <a href="contact-us">Contact Us</a>
+          <a href="/about-us">About Us</a>
+          <a href="/history">History</a>
+          <a href="/research-center">Research Center</a>
+          <a href="/contact-us">Contact Us</a>
         </div>
         <div className="company-container">
           <h3>MV WORLD</h3>
-          <a href="monaco-design-studio">Monaco Design Studio</a>
-          <a href="custom-design">Custom Design</a>
-          <a href="reveal-events">Reveal Events</a>
-          <a href="news">News</a>
+          <a href="/monaco-design-studio">Monaco Design Studio</a>
+          <a href="/custom-design">Custom Design</a>
+          <a href="/reveal-events">Reveal Events</a>
+          <a href="/news">News</a>
         </div>
         <div className="company-container">
           <h3>FOLLOW US</h3>
@@ -545,7 +545,7 @@ const NavCompany = () => {
           >
             Youtube
           </a>
-          <a href="my-team-projects" target="_blank">
+          <a href="/my-team-projects" target="_blank">
             My team Project
           </a>
         </div>
